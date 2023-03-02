@@ -1,0 +1,20 @@
+## implementação 
+
+export class Singleto {
+
+private static _inastance : Singleton |null;
+ private constructor() {
+ //new not allowed outsid the class
+ }
+  static get instance ():Singleton{
+    if (Singleton ._instance === null){
+    Singleton._instance = Singleton();
+    }
+    return Singleton._instance;
+    
+  }
+}
+
+const instance1=Singlento.intance;
+const instance2=Singlenton.instance;
+console.log(instance1===instance2)true;
